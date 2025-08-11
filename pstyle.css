@@ -1,0 +1,583 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    font-family: "Libertinus Sans", sans-serif;
+}
+
+body{
+    /* background: #081b29; */
+    background-color: black;
+    color: white;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    padding: 5px;
+    justify-content: space-between;
+    margin: auto;
+    /* background-color: rgb(24, 37, 32);  */
+    background: transparent;
+    margin-left: 35px;
+}
+
+.navbar .logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: aliceblue;
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+    margin: 10px;
+    margin-right: 100px;
+
+}
+
+ul li a{
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+ul li a:hover{
+    color: rgb(221, 221, 239);
+    /* transition: 3s; */
+}
+
+.home{
+    height: 100vh;
+    /* background: url(j3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center; */
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+.home .homecontent{
+    /* background-color: aqua; */
+    max-width: 900px;
+    justify-content: center;
+    /* align-items: center;  */
+     /* margin: auto;   */
+}
+.home .homecontent h3{
+    text-align: center;
+    font-size: 40px;
+    color: aqua;
+}
+.home .homecontent h1{
+    font-size: 55px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;  /* Center button horizontally */
+    margin-top: 20px;
+}
+
+
+
+/* ............  */
+/* From Uiverse.io by cssbuttons-io */ 
+/* .home .homecontent .button{
+    align-items: center; */
+   
+/* } */
+button {
+  font-size: 17px;
+  padding: 1em 2.7em;
+  font-weight: 500;
+  background: #374b68;
+  color: white;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.6em;
+  cursor: pointer;
+}
+
+.gradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 0.6em;
+  margin-top: -0.25em;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.3)
+  );
+}
+
+.label {
+  position: relative;
+  top: -1px;
+}
+
+.transition {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-duration: 500ms;
+  background-color: rgba(52, 151, 118, 0.6);
+  border-radius: 9999px;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button:hover .transition {
+  width: 14em;
+  height: 14em;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/* ...................socialmedia  */
+
+
+/* From Uiverse.io by andrew-demchenk0 */ 
+.container {
+  position: relative;
+  width: 250px;
+ /*  choose your size */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.container button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: #313638;
+  transition: 0.3s;
+  cursor: pointer;
+  
+}
+
+.icon {
+  width: 26px;
+  height: 26px;
+  fill: #fff;
+}
+
+.container button:nth-child(1):hover {
+  background-color: #2753a7;
+}
+
+.container button:nth-child(2):hover {
+  background-color: #cd242b;
+}
+
+.container button:nth-child(3):hover {
+  background-color: #55acee;
+}
+
+.container button:nth-child(4):hover {
+  background-color: #0274b3;
+}
+
+.title {
+  color: gray;
+  font-weight: 700;
+  font-size: 17px;
+  position: absolute;
+  top: -35px;
+  left: 0;
+}
+
+.social{
+    
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    margin-left: 240px;
+    margin-top: 190px;
+}
+
+/* ..........................  */
+ .image {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .image img {
+      width: 600px;
+      height: auto;
+      border-radius: 30px;
+    }
+
+    .imagehover{
+        position: absolute;
+        top: 0;
+        right: 150px;
+        width: 1000px;
+        height: 800px;
+        background: transparent;
+        transition: 3s;
+    }
+    .imagehover:hover{
+        background: black;
+        opacity: .8;
+    }
+/* ......................................about */
+#about {
+  padding: 50px;
+  background-color: grey;
+   height: 100vh;        
+  width: 100vw;  
+
+  gap: 30px;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  margin-top: 50px;
+  align-items: center; /* vertically align */
+  justify-content: center; /* horizontally center */
+}
+
+
+/* .about-image img {
+  width: 700px;
+  height: 700px;
+  border-radius: 55px;
+  object-fit: cover;
+  margin-left: 30px;
+   flex-wrap: wrap;
+  
+} */
+
+.about-image {
+  position: relative;
+  width: 700px;
+  height: 700px;
+  border-radius: 55px;
+  margin-left: 30px;
+  overflow: hidden; /* Ensures smooth border and hide overflow */
+}
+
+.about-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 55px;
+  transition: opacity 0.5s ease;
+}
+
+/* Show default image by default */
+.default-image {
+  z-index: 1;
+  opacity: 1;
+}
+
+/* Hover image is hidden by default */
+.hover-image {
+  z-index: 2;
+  opacity: 0;
+}
+
+/* On hover, switch images */
+.about-image:hover .default-image {
+  opacity: 0;
+}
+
+.about-image:hover .hover-image {
+  opacity: 1;
+}
+
+
+/* ..........................  */
+
+.about-description {
+  max-width: 700px;
+}
+
+.about-description h2 {
+  font-size: 4rem;
+  margin-bottom: 5px;
+}
+
+.about-description p {
+  font-size: 2.1rem;
+  line-height: 1.6;
+}
+/* ...........................................................................................................  */
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.project {
+    width: 400px;
+    height: 550px;
+    padding: 15px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-top: 30px;
+}
+
+.project img {
+    width: 100%;
+    height:350px;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project img:hover {
+    transform: scale(1.03);
+    box-shadow: 3px 6px 8px 10px rgba(0, 0, 0, 0.3);
+}
+
+.project h2, h1 {
+    margin-top: 10px;
+    font-size: 18px;
+    /* color: black; */
+}
+
+#career{
+  padding: 50px;
+  /* background-color: grey; */
+   height: 100vh;        
+  width: 100vw;  
+
+}
+
+
+.career-title {
+  text-align: center;
+  font-size: 56px;
+  color: #fff;
+  margin-bottom: 30px;
+  position: relative;
+  animation: slideIn 1.5s ease-out;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* Simple slide-in animation */
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.career-title {
+  animation: slideIn 1.5s ease-out forwards;
+}
+/* Style for h2 */
+.project h2 {
+  font-size: 20px;
+  color: #555;
+  font-weight: 400;
+  margin-bottom: 10px;
+  animation: fadeSlideIn 1.3s ease forwards;
+}
+.project h1{
+  font-size: 35px;
+  color: #144c76;
+}
+/* ............................................products  */
+
+.productss {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 90px;
+}
+#products{
+  padding: 50px;
+  background-color: grey; 
+   height: 100vh;        
+  width: 100vw;  
+
+}
+
+/*  */
+
+#products .container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+
+
+.container .card .icon {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background: #2c73df;
+
+}
+
+.container .card .icon .fa-brands  {
+
+    position: absolute;
+
+    top: 50%;
+
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    font-size: 80px;
+
+    color: #fff;
+
+}
+
+.container .card .slide {
+
+    width: 300px;
+
+    height: 200px;
+
+    transition: 0.5s;
+
+}
+
+.container .card .slide.slide1 {
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 1;
+
+    transition: .7s;
+
+    transform: translateY(100px);
+
+}
+
+.container .card:hover .slide.slide1{
+
+    transform: translateY(0px);
+
+}
+
+.container .card .slide.slide2 {
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    transition: .8s;
+
+    transform: translateY(-100px);
+
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+
+}
+
+.container .card:hover .slide.slide2{
+
+    transform: translateY(0);
+
+}
+
+.container .card .slide.slide2::after{
+
+    content: "";
+
+    position: absolute;
+
+    width: 30px;
+
+    height: 4px;
+
+    bottom: 15px;
+
+    left: 50%;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background: #2c73df;
+
+}
+
+.container .card .slide.slide2 .content p {
+
+    margin: 0;
+
+    padding: 0;
+
+    text-align: center;
+
+    color: white;
+
+}
+
+.container .card .slide.slide2 .content h3 {
+
+    margin: 0 0 10px 0;
+
+    padding: 0;
+
+    font-size: 24px;
+
+    text-align: center;
+
+    color: white;
+
+} 

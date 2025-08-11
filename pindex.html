@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Portfolio</title>
+<link rel="stylesheet" href="./pstyle.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+<!-- icon-fontawsome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+  
+</style>
+
+
+</head>
+
+<body>
+    <header>
+     <div class="navbar">
+            <!-- <img src="logo2.png" alt="log" class="logo"> -->
+        <a href="" class="logo">Portfolio</a>
+            <ul>
+                <li> <a href="#home"> Home</a></li>
+                 <li> <a href="#about">About</a></li>
+                 <li> <a href="#career">Highlights</a></li>
+                  <li> <a href="#products"> Projects</a></li>
+                   <!-- <li> <a href="services">Services</a></li> -->
+                    <li> <a href="contact">Contact</a></li>
+            </ul>
+         </div>
+</header>
+
+<section class="home">
+    <div class="homecontent">
+        <h1> Hi I am <br>
+            Mark Elliot Zuckerberg</h1>
+        <h3> Co-founding Facebook, CEO of Meta Platforms</h3>
+
+    <div class="button-container">
+        <button class="button">
+            <span class="transition"></span>
+            <span class="gradient"></span>
+            <span class="label">Let's Connect</span>
+            </button>
+      </div>
+
+      <div class="social">
+
+            <!-- From Uiverse.io by andrew-demchenk0 --> 
+        <div class="container">
+        <button><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" id="Layer_21" height="24" data-name="Layer 21"><title></title><path d="M16.75,9H13.5V7a1,1,0,0,1,1-1h2V3H14a4,4,0,0,0-4,4V9H8v3h2v9h3.5V12H16Z"></path></svg></button>
+        <button><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg></button>
+        <!-- <button><svg class="icon" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="56.693px" viewBox="0 0 56.693 56.693" version="1.1" id="Layer_1" height="56.693px"><path d="M52.837,15.065c-1.811,0.805-3.76,1.348-5.805,1.591c2.088-1.25,3.689-3.23,4.444-5.592c-1.953,1.159-4.115,2-6.418,2.454  c-1.843-1.964-4.47-3.192-7.377-3.192c-5.581,0-10.106,4.525-10.106,10.107c0,0.791,0.089,1.562,0.262,2.303  c-8.4-0.422-15.848-4.445-20.833-10.56c-0.87,1.492-1.368,3.228-1.368,5.082c0,3.506,1.784,6.6,4.496,8.412  c-1.656-0.053-3.215-0.508-4.578-1.265c-0.001,0.042-0.001,0.085-0.001,0.128c0,4.896,3.484,8.98,8.108,9.91  c-0.848,0.23-1.741,0.354-2.663,0.354c-0.652,0-1.285-0.063-1.902-0.182c1.287,4.015,5.019,6.938,9.441,7.019  c-3.459,2.711-7.816,4.327-12.552,4.327c-0.815,0-1.62-0.048-2.411-0.142c4.474,2.869,9.786,4.541,15.493,4.541  c18.591,0,28.756-15.4,28.756-28.756c0-0.438-0.009-0.875-0.028-1.309C49.769,18.873,51.483,17.092,52.837,15.065z"></path></svg></button> -->
+        <!-- <span class="title">Contact someone</span> -->
+        </div>
+
+        
+
+</div>
+
+</div>
+ <div class="image">
+      <img src="z1.jpg" alt="Joseph Annamkutty Jose">
+       
+    </div>
+  </div>
+
+ <span class="imagehover"></span>
+</section>
+<!-- ...................................  -->
+<section id="about">
+  <div class="about-container">
+    <div class="about-image">
+      <img src="z2.jpg" alt="About Image" class="default-image">
+      <img src="z8.jpg" alt="Hover Image" class="hover-image">
+    </div>
+
+    <div class="about-description">
+      <h2>About Me</h2>
+      <p>
+        I am a tech enthusiast and aspiring entrepreneur, passionate about using technology to 
+        connect people and create meaningful digital experiences. I am deeply interested in innovations 
+        like artificial intelligence, web development, and the evolving metaverse. Through continuous learning and hands-on projects, I aim to make a lasting impact in the tech world.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ......................................................................................  -->
+
+
+<section id="career">
+    <h2 class="career-title"> Career Highlights</h2>
+
+  <div class="box">
+    <div class="project">
+      <!-- <img src="https://www.rlogical.com/wp-content/uploads/2020/12/MERN.webp" alt=""> -->
+     <img src="meta.jpg" alt="">
+     <h1>2021</h1> <br>
+      <h2>Transitioned Facebook into Meta, focusing on the metaverse</h2>
+    </div>
+
+    <div class="project">
+      <!-- <img src="https://www.rlogical.com/wp-content/uploads/2020/12/MERN.webp" alt=""> -->
+     <img src="meta2.jpg" alt="">
+     <h1>2015</h1> <br>
+      <h2>Acquisition of major companies (WhatsApp, Instagram, Oculus)</h2>
+    </div>
+
+    <div class="project">
+     <img src="meta3.jpg" alt="">
+      <!-- <img src="https://www.rlogical.com/wp-content/uploads/2020/12/MERN.webp" alt=""> -->
+       <h1>2012</h1> <br>
+      <h2>Facebook IPO</h2>
+    </div>
+
+    <div class="project">
+    <img src="meta4.jpg" alt="">
+      <!-- <img src="https://www.rlogical.com/wp-content/uploads/2020/12/MERN.webp" alt=""> -->
+       <h1>2004</h1> <br>
+      <h2>Co-founded Facebook at Harvard</h2>
+    </div>
+  </div>
+</section>
+
+
+<section id="products">
+    <h2 class="career-title"> Projects and Products</h2>
+
+   <div class="productss">
+
+    <div class="container">
+
+       
+
+        <div class="card">
+
+            <div class="slide slide1">
+
+                <div class="content">
+
+                    <div class="icon">
+
+                        <!-- <i class="fa fa-user-circle" aria-hidden="true"></i> -->
+                        <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="slide slide2">
+
+                <div class="content">
+
+                    <h3>
+
+                        Facebook 
+
+                    </h3>
+
+                    <p>Social networking platform</p>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+   <!-- 222222222222222222222222222222222222       -->
+
+    <div class="container">
+
+       
+
+        <div class="card">
+
+            <div class="slide slide1">
+
+                <div class="content">
+
+                    <div class="icon">
+
+                        <!-- <i class="fa fa-user-circle" aria-hidden="true"></i> -->
+                        <!-- <i class="fa-brands fa-facebook" aria-hidden="true"></i> -->
+                        <i class="fa-brands fa-whatsapp"  aria-hidden="true"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="slide slide2">
+
+                <div class="content">
+
+                    <h3>
+
+                        Whatsaap 
+
+                    </h3>
+
+                    <p>Acquired messaging service</p>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+<!-- 3333333333333333333333333333  -->
+  <div class="container">
+
+       
+
+        <div class="card">
+
+            <div class="slide slide1">
+
+                <div class="content">
+
+                    <div class="icon">
+
+                        <!-- <i class="fa fa-user-circle" aria-hidden="true"></i> -->
+                        <!-- <i class="fa-brands fa-facebook" aria-hidden="true"></i> -->
+                        <i class="fa-brands fa-twitter"  aria-hidden="true"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="slide slide2">
+
+                <div class="content">
+
+                    <h3>
+
+                        Twitter
+
+                    </h3>
+
+                    <p>Acquired messaging service</p>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 44444444444444444444444444444444444444444444444444444444444  -->
+     <div class="container">
+
+       
+
+        <div class="card">
+
+            <div class="slide slide1">
+
+                <div class="content">
+
+                    <div class="icon">
+
+                        <!-- <i class="fa fa-user-circle" aria-hidden="true"></i> -->
+                        <!-- <i class="fa-brands fa-facebook" aria-hidden="true"></i> -->
+                        <!-- <i class="fa-brands fa-twitter"  aria-hidden="true"></i> -->
+                        <i class="fa-brands fa-facebook-messenger" aria-hidden="true"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="slide slide2">
+
+                <div class="content">
+
+                    <h3>
+
+                        Messenger
+
+                    </h3>
+
+                    <p> Instant messaging app</p>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    </div>
+
+</body>
+
+</html>
+
+</section>
+
+
+</body>
+</html>
+
+
+      <!-- From Uiverse.io by McHaXYT --> 
